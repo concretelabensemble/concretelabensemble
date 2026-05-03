@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+# Replace <YOUR_GITHUB_PAGES_URL> with your actual GitHub Pages URL,
+# for example https://username.github.io/repo or https://www.custom-domain.com
+Sitemap: https://<YOUR_GITHUB_PAGES_URL>/sitemap.xml
