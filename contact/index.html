@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact — Concrète [Lab] Ensemble</title>
-  <meta name="description" content="Get in touch with Concrète [Lab] Ensemble for bookings, collaborations and enquiries.">
+  <title>Contact (Web3Forms Test) — Concrète [Lab] Ensemble</title>
+  <meta name="description" content="Get in touch with Concrète [Lab] Ensemble for bookings, collaborations and enquiries. (Web3Forms test)">
   <link rel="icon" type="image/x-icon" href="../assets/img/shared/favicon.ico"><link rel="icon" type="image/png" href="../assets/img/shared/favicon.webp">
   <link rel="stylesheet" href="../css/style.css">
 </head>
@@ -56,7 +56,7 @@
   <main>
     <div class="page-banner page-banner--simple">
       <div class="page-banner-title">
-        <h1><span class="lang-en">Contact <span class="banner-sub">| Talk to us</span></span><span class="lang-pt">Contacto <span class="banner-sub">| Fale Connosco</span></span></h1>
+        <h1><span class="lang-en">Contact <span class="banner-sub">| Talk to us (Web3Forms Test)</span></span><span class="lang-pt">Contacto <span class="banner-sub">| Fale Connosco (Teste Web3Forms)</span></span></h1>
       </div>
     </div>
 
@@ -79,17 +79,13 @@
           </div>
 
           <!-- Form column -->
-          <!--
-            To receive form submissions, replace the action URL with your Formspree endpoint:
-            1. Go to https://formspree.io and create a free account
-            2. Create a new form and copy the endpoint URL
-            3. Replace action="https://formspree.io/f/YOUR_FORM_ID" below
-            Alternatively, use any other form backend service.
-          -->
+          <!-- Web3Forms test form -->
           <form class="contact-form"
-                action="https://formspree.io/f/YOUR_FORM_ID"
+                action="https://api.web3forms.com/submit"
                 method="POST"
                 novalidate>
+            <input type="hidden" name="access_key" value="f137fa4f-8d53-4910-85a7-43149af2b01c">
+            
             <div class="form-row">
               <div class="form-field">
                 <label for="first-name"><span class="lang-en">First Name</span><span class="lang-pt">Primeiro Nome</span></label>
@@ -106,7 +102,7 @@
             </div>
             <div class="form-field">
               <label for="message"><span class="lang-en">Message</span><span class="lang-pt">Mensagem</span></label>
-              <textarea id="message" name="message" rows="6"></textarea>
+              <textarea id="message" name="message" rows="6" required></textarea>
             </div>
             <div class="form-success" id="formSuccess" role="alert">
               <span class="lang-en">Thank you — your message has been sent.</span><span class="lang-pt">Obrigado — a sua mensagem foi enviada.</span>
